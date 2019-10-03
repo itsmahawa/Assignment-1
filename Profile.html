@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
-    <link href="bootstrap.css" rel="stylesheet" />
-    <style>
-        body {background-color: white}
-        h1 {text-align: left}
-        .form-wrap {text-align: center}
-        
-    </style>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/d128691f35.js"
+      crossorigin="anonymous"
+    ></script>
 
-<body class=".bg-primary">
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="navbar bg-primary navbar-dark fixed-top">
+      <span class="navbar-brand h1 mb-0">Profile</span>
+      <i class="fas fa-check text-light"></i>
+    </nav>
     <div class="container">
-        <div class="mx-auto" style="width: 300px;">
-            <div class="text-left">
-                <h1 text-center>Profile</h1>
-                    <form>
-                    <div class="form-group">
-                        <label for="User-Name">Username</label>
-                        <input type="text" class="form-control" id="First-Name" placeholder="Username"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="Last-Name">Email</label>
-                        <input type="text" class="form-control" id="last-name" placeholder="Email" />
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">First Name</label>
-                        <input type="text" class="form-control" id="email" placeholder="Email" />
-                    </div>
-                    <div class="form-group">
-                        <label for="Password">Last Name</label><input type="password" class="form-control"
-                            placeholder="Last Name" id="password" />
-                    </div>
-
-                    <button type="button" style="width: 300px" ; class="btn btn-success"> Create Website</button> <br>
-                    <br>
-                    <button type=".button" style="width: 300px" ; class="btn btn-danger"> Logout</button>
-                </form>
-            </div>
+      <form>
+        <div class="form-group">
+          <label for="User-Name">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Username"
+            placeholder="Username"
+          />
         </div>
-</body>
+
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="Email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="First-Name">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="First-Name"
+            placeholder="First Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Password">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            id="last-name"
+          />
+        </div>
+      </form>
+      <a href="../websitelist.html" class="btn btn-primary btn-block"
+        >Websites</a
+      >
+      <a href="Login.html" class="btn btn-danger btn-block">Logout</a>
+    </div>
+    <nav class="navbar bg-primary fixed-bottom">
+      <span></span>
+      <a class="text-light" href="Profile.html"><i class="fas fa-user"></i> </a>
+    </nav>
+  </body>
 </html>
