@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/d128691f35.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Widget Heading</title>
+  </head>
+
+  <body>
+    <nav class="navbar bg-light navbar-light fixed-top">
+      <div>
+        <a href="../Website/websitelist.html" class="text-dark">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <span class="navbar-brand mb-0 h1 ml-4"> Edit Widget </span>
+      </div>
+      <a href="../Page/pagelist.html" class="text-dark">
+        <i class="fas fa-check"></i>
+      </a>
+    </nav>
+    <main class="container">
+      <form>
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input type="text" class="form-control" id="Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="Text">Text</label>
+          <input type="text" class="form-control" id="text" />
+        </div>
+
+        <div class="form-group">
+          <label for="URL">URL</label>
+          <input
+            type="url"
+            class="form-control"
+            placeholder="insert link"
+            id="url link"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="URL">Width</label>
+          <input type="text" class="form-control" value="100%" id="url link" />
+        </div>
+
+        <div class="form-group">
+          <label for="Size">Upload</label>
+          <input type="file" class="form-control" id="Upload" />
+        </div>
+        <button class="btn btn-primary btn-block">Upload Image</button>
+        <a href="../Widget/widgetlist.html" class="btn btn-danger btn-block"
+          >Delete</a
+        >
+      </form>
+    </main>
+    <footer class="navbar navbar-light bg-light fixed-bottom">
+      <span></span>
+      <a class="text-dark" href="#">
+        <i class="fas fa-user"></i>
+      </a>
+    </footer>
+  </body>
+</html>
